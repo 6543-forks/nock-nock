@@ -18,22 +18,15 @@
 package com.afollestad.nocknock
 
 import android.app.Application
-import com.afollestad.nocknock.BuildConfig.DEBUG
 import com.afollestad.nocknock.engine.engineModule
 import com.afollestad.nocknock.koin.mainModule
 import com.afollestad.nocknock.koin.prefModule
 import com.afollestad.nocknock.koin.viewModelModule
-import com.afollestad.nocknock.logging.FabricTree
 import com.afollestad.nocknock.notifications.NockNotificationManager
 import com.afollestad.nocknock.notifications.notificationsModule
 import com.afollestad.nocknock.utilities.commonModule
-import com.crashlytics.android.Crashlytics
-import io.fabric.sdk.android.Fabric
 import org.koin.android.ext.android.inject
 import org.koin.android.ext.android.startKoin
-import timber.log.Timber
-import timber.log.Timber.DebugTree
-import timber.log.Timber.d as log
 
 /** @author Aidan Follestad (@afollestad) */
 class NockNockApp : Application() {
@@ -42,13 +35,6 @@ class NockNockApp : Application() {
 
   override fun onCreate() {
     super.onCreate()
-
-    if (DEBUG) {
-      Timber.plant(DebugTree())
-    }
-
-    Timber.plant(FabricTree())
-    Fabric.with(this, Crashlytics())
 
     val modules = listOf(
         prefModule,
@@ -64,13 +50,11 @@ class NockNockApp : Application() {
     )
 
     val nockNotificationManager by inject<NockNotificationManager>()
-    onActivityLifeChange { activity, resumed ->
+    onActivityLifeChange { _, resumed ->
       if (resumed) {
         resumedActivities++
-        log("Activity resumed: $activity, resumedActivities = $resumedActivities")
       } else {
         resumedActivities--
-        log("Activity paused: $activity, resumedActivities = $resumedActivities")
       }
       check(resumedActivities >= 0) { "resumedActivities can't go below 0." }
       nockNotificationManager.setIsAppOpen(resumedActivities > 0)

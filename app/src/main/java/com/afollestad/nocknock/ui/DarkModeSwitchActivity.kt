@@ -27,7 +27,6 @@ import com.afollestad.nocknock.ui.NightMode.UNKNOWN
 import com.afollestad.nocknock.utilities.rx.attachLifecycle
 import com.afollestad.rxkprefs.Pref
 import org.koin.android.ext.android.inject
-import timber.log.Timber.d as log
 
 /** @author Aidan Follestad (afollestad) */
 abstract class DarkModeSwitchActivity : AppCompatActivity() {
@@ -44,7 +43,6 @@ abstract class DarkModeSwitchActivity : AppCompatActivity() {
       darkModePref.observe()
           .filter { it != isDarkModeEnabled }
           .subscribe {
-            log("Theme changed, recreating Activity.")
             recreate()
           }
           .attachLifecycle(this)
