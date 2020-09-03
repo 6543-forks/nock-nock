@@ -30,7 +30,6 @@ ext.versions = [
     googleMaterial      : '1.0.0',
     room                : '2.0.0',
     lifecycle           : '2.0.0',
-    firebaseCore        : '16.0.8',
 
     // Rx
     rxJava              : '2.2.8',
