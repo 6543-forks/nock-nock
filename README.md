@@ -1,5 +1,9 @@
 ## Nock Nock
 
+## Info
+this is my personal fork of nock-nock witch has only one goal:
+use nock-nock tracking free (NO google **firebase** and NO **crashlytics**)
+
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ![Showcase](https://raw.githubusercontent.com/afollestad/nock-nock/master/art/showcase5.png)
