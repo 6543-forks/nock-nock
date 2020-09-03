@@ -6,7 +6,14 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine/engine.iml" filepath="$PROJECT_DIR$/engine/engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/git-nock-nock.iml" filepath="$PROJECT_DIR$/.idea/modules/git-nock-nock.iml" group="nock-nock" />
       <module fileurl="file://$PROJECT_DIR$/nock-nock.iml" filepath="$PROJECT_DIR$/nock-nock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nock-nock-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nock-nock-app.iml" group="nock-nock/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/nock-nock-common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/nock-nock-common.iml" group="nock-nock/common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/nock-nock-data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/nock-nock-data.iml" group="nock-nock/data" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/engine/nock-nock-engine.iml" filepath="$PROJECT_DIR$/.idea/modules/engine/nock-nock-engine.iml" group="nock-nock/engine" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notifications/nock-nock-notifications.iml" filepath="$PROJECT_DIR$/.idea/modules/notifications/nock-nock-notifications.iml" group="nock-nock/notifications" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewcomponents/nock-nock-viewcomponents.iml" filepath="$PROJECT_DIR$/.idea/modules/viewcomponents/nock-nock-viewcomponents.iml" group="nock-nock/viewcomponents" />
       <module fileurl="file://$PROJECT_DIR$/notifications/notifications.iml" filepath="$PROJECT_DIR$/notifications/notifications.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewcomponents/viewcomponents.iml" filepath="$PROJECT_DIR$/viewcomponents/viewcomponents.iml" />
     </modules>
